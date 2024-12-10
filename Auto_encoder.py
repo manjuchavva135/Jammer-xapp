@@ -112,7 +112,7 @@ def main():
     plt.show()
 
     # Determine threshold for anomaly detection (e.g., using percentile)
-    threshold = np.percentile(reconstruction_error, 80)
+    threshold = np.percentile(reconstruction_error, 96)
     print(f"Threshold for anomaly detection (95th percentile): {threshold}")
 
     # Label anomalies based on reconstruction error
